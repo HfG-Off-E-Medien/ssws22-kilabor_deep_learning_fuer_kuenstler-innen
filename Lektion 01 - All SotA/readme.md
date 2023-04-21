@@ -1,5 +1,5 @@
 Diese Lektion liefert lediglich Anhaltspunkte in Form von Deep Learning-Papers und Projekten, die im Bereich des generative Modeling herausragende Ergebnisse gezeigt haben.
-Es gibt eine der Forschung inhärente Tendenz in Richtung Bildanwendungen. Das liegt daran, dass Bilddatensets relativ leicht sammelbar sind bzw. schon einige brauchbare existieren und Resultate ganz wörtlich anschaubar und damit verhätlnismäßig leicht zu evaluieren sind. Grundsätzlich ist das Arbeiten mit Daten jeder Art absolut möglich. Man darf  annehmen, dass Algorithmen, die auf Bildern gute Ergebnisse erzielen grundsätzlich auch auf andere Datentypen anwendbar sein müssten oder mindestens Fortschritte im Feld der Bild-Synthese auch Fortschritte für die Synthese anderer Datentypen (Text, Video, Roboter-Aktionen, Audio, 3D-Modelle etc. pp.) bedeuten müssten.
+Es gibt eine der Forschung inhärente Tendenz in Richtung Bildanwendungen. Das liegt daran, dass Bilddatensets relativ leicht sammelbar sind bzw. schon einige brauchbare existieren und Resultate ganz wörtlich anschaubar und damit verhätlnismäßig leicht zu evaluieren sind. Grundsätzlich ist das Arbeiten mit Daten jeder Art absolut möglich.
 
 #### Unconditional Image-Synthesis
 
@@ -66,8 +66,4 @@ Mittlerweile gibt es GAN-basierte Models, die weitaus bessere Ergebnisse erziele
 ![](https://github.com/NVlabs/MUNIT/raw/master/results/animal.jpg)
 
 ![](https://github.com/NVlabs/FUNIT/raw/master/docs/images/animal.gif)
-
-Tatsächlich waren das jetzt alles Image-Projekte. Die Auflistung hatte aber den Zweck aufzulisten was im Bereich des 'generative Modelling' grundsätzlich denkbar ist.
-Existieren Daten und eine Architektur, die die Daten verarbeiten kann, ist jeder andere Datentyp genauso denkbar. Nach allen Lektionen werden wir eine Intuition dafür besitzen, wie diese Models prinzipiell funktionieren und werden in die Lage versetzt sein, dieses Wissen auf eigenen Probleme und Daten anzuwenden.
-
 
