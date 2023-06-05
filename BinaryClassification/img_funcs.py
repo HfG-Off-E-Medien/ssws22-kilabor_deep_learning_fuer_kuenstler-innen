@@ -119,9 +119,33 @@ def augment(
         ):
 
     img = center_zoom(img, r)
-    img = normalise(img)
     if random_flip:
         img = flip(img)
     img = resize_to_size(img, output_size)
     img = square_padding(img)
     return img
+
+"""
+func:       render_grid(imgs, filepath)
+args:       list of npy-arrays : imgs
+            opt: string        : filepath
+returns:    an image with a grid of all the images as a npy-array
+"""
+def render_grid(imgs, filepath=None):
+    shape = imgs[0].shape
+    n = int(np.ceil(np.sqrt(len(imgs))))
+    grid = np.zeros((shape[0] * n, shape[1] * n, 3)).astype(np.uint8)
+
+    for i, img in enumerate(imgs):
+        row = i % n
+        col = int((i - row) / n)
+        start_idx_height = col * shape[0]
+        end_idx_height = (col+1) * shape[0]
+        start_idx_width = row * shape[1]
+        end_idx_width = (row+1) * shape[1]
+        grid[start_idx_height : end_idx_height, start_idx_width : end_idx_width] = img
+
+    if filepath != None:
+        cv2.imwrite(filepath, grid)
+    return grid
+
